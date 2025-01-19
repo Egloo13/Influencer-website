@@ -12,6 +12,7 @@ body {
     font-style: normal;
 }
 
+
 /* sheared styles */
 .dis-flex {
     display: flex;
@@ -102,11 +103,17 @@ li {
 /* logo styles */
 
 .icon-container {
-   padding: 80px 160px;
+   padding: 80px 130px;
    margin-top: 150px 0;
-   justify-content: space-evenly;
+   justify-content: center;
    gap: 40px;
    
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 /* products styles */
@@ -123,21 +130,18 @@ li {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-    width: 1047px;
-    height: 1662px;
+    place-items: center; 
     gap: 4rem;
     justify-content: center;
     padding: 15px; 
     border-radius: 10px;
 }
 .product-sample {
-    
+    width: 329px; height: 476px;
     background-color: #ffffff;
     border-radius: 10px;
+
     text-align: left;
-    width: 329px;
-    height: 476px;
     padding: 20px;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
     
@@ -177,10 +181,6 @@ li {
     gap: 96px;
     
 }
-.box-text {
-    width: 610px;
-    height: 224px;
-}
 .box-text > h3 {
     font-size: 2.1rem;
 }
@@ -207,4 +207,71 @@ footer {
 }
 .f14 {
     font-size: 0.98
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+    nav, ul, .head-container, .feature-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .icon-container { 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    .logo {
+        width: 100px;
+        height:50px;
+    }
+    body {
+        width: 100%;
+        height: auto;
+        padding: 0px 0px;
+        margin: 0px;
+    }
+    main {
+        margin: 0px;
+        padding: 20px;
+        height: auto;
+    }
+    .head-container, .feature-container {
+        flex-direction: column-reverse;
+    }
+    .head-container {
+        padding: 0 20px;
+    }
+    .see-more {
+        justify-content: flex-end;
+        align-items: right;
+        padding: 0px 10px 0px 0px;
+        margin-top: 0px;
+    }
+    .item-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .feature-container {
+        padding: 0px;
+        margin: 60px 0 0 0;
+
+    }
+    .head-container {
+        padding: 20px 0px;
+        margin: 0px;
+       
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
 }
