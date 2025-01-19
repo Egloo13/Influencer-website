@@ -6,7 +6,7 @@
 body {
     width: 100%;
     margin: 0  auto;
-    padding: 0 135px;
+    
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
@@ -64,7 +64,7 @@ body {
 nav {
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
+    padding: 20px 120px;
     
 }
 ul {
@@ -86,7 +86,7 @@ li {
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-    padding: 20px 40px;
+    padding: 20px 135px;
 }
 .head-container {
     gap: 117px;
@@ -102,9 +102,10 @@ li {
 /* logo styles */
 
 .icon-container {
-   padding: 80px 150px;
-   margin-top: 100px 0;
+   padding: 80px 160px;
+   margin-top: 150px 0;
    justify-content: space-evenly;
+   gap: 40px;
    
 }
 
@@ -123,10 +124,10 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     place-items: center;
-    gap: 30px;
     width: 1047px;
     height: 1662px;
-    
+    gap: 4rem;
+    justify-content: center;
     padding: 15px; 
     border-radius: 10px;
 }
@@ -162,7 +163,7 @@ li {
 .see-more {
     display: flex;
     justify-content: flex-end;
-    padding: 1px 90px 20px 0;
+    padding: 1px 190px 20px 0;
     text-align: right;
     
 }
